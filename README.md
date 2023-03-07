@@ -1,0 +1,2 @@
+# QQ
+stock forecasting algorithm
