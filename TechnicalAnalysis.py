@@ -38,7 +38,7 @@ plt.show()
 
 data['macd'], data['macdsignal'], data['macdhist'] = talib.MACD(data['Close'])
 
-# check for bearish divergence
+# Print out what kind of divergence, if any, was detected
 if data['Close'][-1] > data['Close'][-2] and data['macd'][-1] < data['macd'][-2]:
     print('Bearish divergence detected!')
 elif data['Close'][-1] < data['Close'][-2] and data['macd'][-1] > data['macd'][-2]:
